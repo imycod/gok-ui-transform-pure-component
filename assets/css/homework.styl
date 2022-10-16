@@ -1,0 +1,406 @@
+
+// 作业提交内容为空
+.no-submit-homework {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  background: #FFFFFF;
+  padding: 14px 8px;
+  line-height: 14px;
+  margin-top: 8px
+}
+// 作业附件样式
+.icon-pic {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px
+}
+.homework-detail-annex {
+  width: 315px;
+  height: 40px;
+  display:flex;
+  float:left;
+  align-items:center;
+  padding: 8px;
+  cursor:pointer;
+  margin-right: 53px;
+  background: rgba(255, 255, 255, 0.3)
+  &:hover {
+    background: rgba(186, 231, 255, 0.3);
+  }
+  &:nth-child(3n) {
+    margin-right: 0
+  }
+}
+.homework-detail-annex-2{
+  width: 315px;
+  height: 40px;
+  display:flex;
+  float:left;
+  align-items:center;
+  padding: 8px;
+  cursor:pointer;
+  margin-right: 53px;
+  background: rgba(255, 255, 255, 0.3)
+  &:hover {
+    background: rgba(186, 231, 255, 0.3);
+  }
+  &:nth-child(2n) {
+    margin-right: 0
+  }
+}
+.docname {
+  font-size: 12px;
+  font-weight: 400;
+  color: #262626;
+  width:226px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-right: 17px
+}
+.down-load {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1890FF;
+}
+
+.homework-detail-itemz {
+  .result-wrap {
+    display:flex;
+    align-items: center;
+    justify-content: space-between
+    /deep/ .ivu-select {
+        margin-left:10px
+    }
+    .tab {
+      display: inline-block;
+      border-top: 1px solid #D0D0D0;
+      border-bottom: 1px solid #D0D0D0;
+      border-right: 1px solid #D0D0D0;
+      border-radius: 4px
+      .tab-item {
+        float: left;
+        min-width: 72px;
+        height: 24px;
+        text-align: center;
+        border-left: 1px solid #D0D0D0;
+        line-height: 24px;
+        padding: 0 5px;
+        cursor:pointer
+        &:hover {
+          color: #278EF8;
+        }
+        &:first-child {
+          border-radius: 4px 0 0 4px
+        }
+        &:last-child {
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+      .tab-active {
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFFFF;
+        background: #278EF8;
+        border: 1px solid rgba(39, 142, 248, 0);
+        &:hover {
+          color: #fff;
+        }
+        &:first-child {
+          border-radius: 4px 0px 0px 4px;
+        }
+        &:last-child {
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+    }
+  }
+  .detail-content-title {
+    height: 54px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 0.85);
+    position: relative;
+    img {
+      margin-right: 8px
+    }
+  }
+  .homework-detail-item {
+    width:100%;
+    padding: 8px;
+    background: rgba(245, 245, 245, 0.49);
+    overflow:hidden;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 28px;
+    max-height:90px;
+    word-break: break-all;
+  }
+  .homework-detail-annexz {
+    display: inline-block;
+    width: 100%;
+  }
+  .homework-detail-result {
+    width: 100%;
+    margin-top: 7px;
+    .result-itemz {
+      padding-bottom:24px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      margin-top: 24px
+      &:first-child {
+        margin-top:0
+      }
+    }
+    .result-item {
+      padding: 16px;
+      background: #F8F8F8;
+      border-radius: 8px;
+    }
+    .result-titlez {
+        display: flex;
+        justify-content: space-between;
+        .result-title-item {
+          display:flex;
+          align-items:center;
+          font-size: 14px;
+          font-weight: 400;
+          color: #262626;
+          .result-time {
+              font-size: 14px;
+              font-weight: 400;
+              color: #999999;
+              margin-right:33px
+          }
+          .result-btn {
+              font-size: 14px;
+              font-weight: 400;
+              color: #198EF8;
+              cursor:pointer
+              .icon {
+                  margin-left:6px
+              }
+          }
+          .avatar-pic {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px
+          }
+          .arrow-style {
+            color: rgba(39, 142, 248, 1);
+            line-height: 24px;
+            height: 24px;
+          }
+          .active-arrow {
+            transform:rotate(90deg)
+          }
+        }
+      }
+      .result-info {
+          .group-member {
+              display:inline-block;
+              margin-top:8px
+              .group-member-item {
+                  float:left;
+                  width: 160px;
+                  height: 48px;
+                  background: #FFFFFF;
+                  border-radius: 4px;
+                  margin-right:8px;
+                  margin-top:8px
+                  &:nth-child(6n) {
+                    margin-right:0
+                  }
+                  img {
+                    width:32px;
+                    height:32px;
+                    border-radius: 50%;
+                    margin-left: 8px
+                  }
+                  p {
+                    width: 100px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #333333;
+                    margin-left: 8px;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                  }
+              }
+          }
+          .group-member-info{
+            padding: 8px;
+            color: rgba(38, 38, 38, 0.85);
+            background: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 8px
+          }
+          .expand {
+              overflow: initial;
+              max-height: unset;
+          }
+      }
+      .result-annex {
+          margin-top:10px
+          .result-annex-title {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+          }
+          .result-annex-info {
+            display:inline-block;
+            margin-top:8px;
+          }
+          .annex-margin {
+            margin-right: 37px;
+            &:nth-child(3n) {
+              margin-right: 0
+            }
+          }
+          .pand {
+            padding-top:1px
+          }
+          .expand {
+              overflow: initial;
+              max-height: unset;
+          }
+      }
+      .result-grade {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.85);
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-top:34px;
+        cursor:pointer;
+        text-indent: 16px
+        p {
+          color: rgba(0, 0, 0, 0.3);
+          text-indent: 0px;
+        }
+        .line {
+          width: 1px;
+          height: 16px;
+          background: rgba(0, 0, 0, 0.3);
+          margin: 0 16px
+        }
+        .pingfen {
+          margin-right:10px;
+        }
+        .pinglun {
+          margin-left: 5px;
+          color: rgba(0, 0, 0, 0.85);
+        }
+        .permit-resubmit {
+          font-size: 12px;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 0.3);
+          margin-right: 17px
+          span {
+            margin-left: 8px;
+            color: #278EF8;
+          }
+        }
+      }
+      .homework-score {
+          height: 142px;
+          background: #FFF;
+          border-radius: 4px;
+          padding:16px;
+          margin-top:12px
+          .homework-score-title {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+          }
+          .homework-score-input {
+              display:inline-block;
+              margin-top:15px
+              .input {
+                  width:172px;
+                  height: 32px;
+                  float:left
+                  /deep/ .ivu-input {
+                      width: 172px;
+                      height: 32px;
+                      background: #FFFFFF;
+                      border: 1px solid #DFDFDF;
+                      box-shadow:none
+                  }
+              }
+              .score-val {
+                  display:inline-block;
+                  float:left
+                  p {
+                      width: 64px;
+                      height: 32px;
+                      border: 1px solid #278EF8;
+                      border-radius: 4px;
+                      margin-left:8px;
+                      text-align:center;
+                      line-height:32px;
+                      float:right;
+                      font-size: 14px;
+                      font-weight: 500;
+                      color: #278EF8;
+                      cursor:pointer
+                  }
+              }
+          }
+          .homework-score-prompt {
+            color: red
+          }
+          .group-score {
+              display:flex;
+              align-items:center;
+              margin-top:13px
+              .modify-score {
+                  padding: 0 16px;
+                  height: 32px;
+                  background: #0087FF;
+                  border-radius: 4px;
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: #FFFFFF;
+                  text-align:center;
+              }
+              .cancel {
+                  width: 64px;
+                  height: 32px;
+                  border: 1px solid rgba(0, 0, 0, 0.3);
+                  border-radius: 4px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: rgba(0, 0, 0, 0.5);
+                  text-align:center;
+                  margin-left:8px
+              }
+          }
+      }
+  }
+  .read-btn {
+      font-size: 12px;
+      font-weight: 400;
+      color: #198EF8;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor:pointer
+      // .icon {
+      //     margin-left:4px;
+      // }
+      // .activeIcon {
+      //     margin-left:4px;
+      //     transform:rotate(180deg)
+      // }
+  }
+  .expand {
+      overflow: initial;
+      max-height: unset;
+  }
+}

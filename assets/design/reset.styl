@@ -1,0 +1,145 @@
+/*v240 快速class 重置组件库按钮背景色和边框色*/
+reset-box-shadow() {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/*v240 快速class 重置view design组件库collapse样式*/
+reset-collapse(){
+
+  /deep/ .ivu-collapse{
+    border:none !important;
+  }
+  /deep/ .ivu-collapse-simple{ // border 有边框
+    border:none !important;
+  }
+
+  /deep/ .ivu-collapse > .ivu-collapse-item.ivu-collapse-item-active > .ivu-collapse-header {
+    border-bottom: none;
+    padding-left: 0;
+    text-indent: 16px
+  }
+
+  /deep/ .ivu-collapse > .ivu-collapse-item {
+    border-top: none;
+  }
+
+  /deep/ .ivu-collapse-header {
+    position: relative;
+    height: 56px;
+    line-height: 56px;
+  }
+
+  /deep/ .ivu-icon {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -7px;
+    transform: rotate(90deg);
+    color: #666666
+  }
+
+  /deep/ .ivu-collapse-item.ivu-collapse-item-active > .ivu-collapse-header > i {
+    transform: rotate(270deg);
+    color: #666666
+  }
+
+  /deep/ .ivu-collapse > .ivu-collapse-item > .ivu-collapse-header {
+    line-height: 40px;
+    font-size: 14px;
+    color: #333333;
+  }
+  /deep/ .ivu-collapse-content {
+    padding 0px !important
+  }
+  /deep/ .ivu-collapse-content > .ivu-collapse-content-box {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/*v240 快速scroll-bar -> use:0*/
+reset-scroll-bar(x=1,y=2,scrollbarColor='',track='',thumb=''){
+  // x-> width y->height
+  if(scrollbarColor==''){
+    scrollbar:rgba(240, 240, 240, 0.1)
+  }
+  /* 定义滚动条样式 */
+  &::-webkit-scrollbar {
+    width: x *1px;											//定义滚动条宽度
+    height: y *1px;											//定义滚动条高度
+    border-radius: 10px;									//定义滚动条圆角
+    background-color: scrollbarColor;				        //定义滚动条颜色
+  }
+
+  /*定义滚动条轨道 内阴影+圆角*/
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);		//定义轨道阴影
+    border-radius: 10px;									//定义轨道圆角
+    background-color: rgba(4, 56, 114, .5);					//定义轨道颜色
+  }
+
+  /*定义滑块 内阴影+圆角*/
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;									//定义滑块圆角
+    box-shadow: inset 0 0 0px rgba(240, 240, 240, .5);		//定义滑块阴影
+    background-color: rgba(2, 33, 54, .5);					//定义滑块颜色
+  }
+}
+
+.border-text-orange {
+  border-color $base !important;
+  color $base !important;
+}
+
+.border-text-depgray {
+  border-color $depgray !important;
+  color $depgray !important;
+}
+
+.btn-orange {
+  background $base !important;
+  border-color $base !important;
+}
+
+.btn-gray {
+  background $gray !important;
+  border-color $gray !important;
+}
+
+.btn-black {
+  background $black !important;
+  border-color $black !important;
+}
+
+.btn-orange:focus, .btn-gray:focus {
+  reset-box-shadow()
+}
+
+/*scoped .teach-content - teach-card.vue*/
+.teach-content {
+  /deep/ .ivu-checkbox-inner {
+    border: 1px solid $base !important;
+  }
+
+  /deep/ .ivu-checkbox-checked .ivu-checkbox-inner {
+    background-color $base !important;
+  }
+
+  /deep/ .ivu-checkbox-indeterminate .ivu-checkbox-inner {
+    background-color $base !important;
+  }
+
+  .chapter {
+    /deep/ .ivu-checkbox-inner {
+      border: 1px solid $info !important;
+    }
+
+    /deep/ .ivu-checkbox-checked .ivu-checkbox-inner {
+      background-color $info !important;
+    }
+
+    /deep/ .ivu-checkbox-indeterminate .ivu-checkbox-inner {
+      background-color $info !important;
+    }
+  }
+}

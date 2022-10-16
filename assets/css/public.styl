@@ -1,0 +1,88 @@
+.bd{
+  border :1px solid black
+}
+// 文本溢出显示省略号
+.text-over{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// 知识点
+.knowledge-operate{
+  margin-top:20px;
+  width: 100%
+  .addBtn{
+    font-size: 14px;
+    font-weight: 400;
+    color: #198EF8;
+    cursor:pointer;
+    height: 25px;
+    line-height:25px;
+    float: left
+  }
+  .knowledge-List{
+    display: inline-block;
+    width: 100%
+    .knowledge-item {
+      height: 25px;
+      background: #55AAF8;
+      border-radius: 4px;
+      line-height:25px;
+      color: #FFFFFF;
+      padding:0 8px;
+      margin-right:8px;
+      margin-bottom:8px;
+      cursor:pointer;
+      float:left
+      /deep/ .ivu-tooltip-inner {
+        max-width: 1100px;
+      }
+    }
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* 修改对话框确认按钮样式 */
+.ivu-icon-ios-information-circle {
+    transform: rotate(180deg); 
+}
+.ivu-modal-confirm-head-title {
+  font-size: 16px;
+  font-family: Source Han Sans CN-Medium, Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);  
+}
+.ivu-modal-confirm-body {
+  font-size: 15px;
+  font-family: Source Han Sans CN-Medium, Source Han Sans CN;
+  font-weight: 500;
+  color: #6A7487;  
+}
+.ivu-modal-footer,
+.ivu-modal-confirm-footer {
+  .ivu-btn-primary {
+    background-color: #FE8836;
+    border: none;
+    &:hover{
+      background-color: #FE8836;
+      border: none;
+      opacity: 0.8;
+    }
+  }
+  .ivu-btn-default{
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+.gok-ivu-btn,
+.gok-ivu-btn:hover{
+  background-color: #FE8836 !important;
+  border-color: #FE8836 !important;
+}
+.gok-ivu-btn:hover{
+  opacity: 0.9 !important;
+}

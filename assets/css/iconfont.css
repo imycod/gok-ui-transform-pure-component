@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('../font/iconfont.ttf?t=1655971453636') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gougou:before {
+  content: "\e626";
+}
+
+.icon-gougou1:before {
+  content: "\e63f";
+}
+
+.icon-gougou2:before {
+  content: "\e651";
+}
+
+.icon-gou:before {
+  content: "\e881";
+}
+
+.icon-sey-duigou:before {
+  content: "\e6d6";
+}
+
+.icon-gouxuan:before {
+  content: "\e60c";
+}
+
+.icon-gou1:before {
+  content: "\e605";
+}
+
+.icon-duigou-01:before {
+  content: "\e60f";
+}
+

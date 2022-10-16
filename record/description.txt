@@ -1,0 +1,1 @@
+src/view/project-trainning/home/components/card.vue
